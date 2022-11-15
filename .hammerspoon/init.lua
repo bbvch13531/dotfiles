@@ -22,15 +22,12 @@ end
 local func_media_event_map = {
   { key = 'f1', mod = {'ctrl'}, func = func_media.bright_decrease },
   { key = 'f2', mod = {'ctrl'}, func = func_media.bright_increase },
---[[
   { key = 'f8', mod = {'ctrl'}, func = func_media.music_prev },
   { key = 'f9', mod = {'ctrl'}, func = func_media.music_play_pause},
   { key = 'f10', mod = {'ctrl'}, func = func_media.music_next },
   { key = 'f11', mod = {'ctrl'}, func = func_media.volumn_decrease },
   { key = 'f12', mod = {'ctrl'}, func = func_media.volumn_increase },
---]]
 }
-
 
 do
   for i, v in pairs(func_media_event_map) do
