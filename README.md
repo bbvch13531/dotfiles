@@ -17,5 +17,9 @@ dotfiles
 6. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 `brew install zsh-autosuggestions`
 
-- hammerspoon
-- raycast
+hammerspoon
+- change window to one third size
+- move to a left/right space 
+- Switch to Desktop1, 2, 3 ...
+
+raycast
