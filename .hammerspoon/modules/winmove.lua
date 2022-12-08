@@ -1,6 +1,42 @@
 -- hs.window.setFrameCorrectness = true
 -- hs.window.animationDuration = 0
 
+local function calc_size(direction)
+    local win = hs.window.focusedWindow()
+    
+    if win == nil then
+      win = hs.window.frontmostWindow()
+    end
+
+    local f = win:frame()
+    local max = win:screen():frame()
+    local new_width = max.w * 1/2
+    local new_x = max.x
+
+    if direction == 0 then
+	if f.w == max.w * 1/2 then
+	  new_width = max.w * 2/3
+	elseif f.w == max.w * 2/3 then
+          new_width = max.w * 1/3
+	elseif f.w == max.w * 1/3 then
+	  new_width = max.w * 1/2
+	end
+    else
+      new_x = max.x + max.w * 1/2
+      if f.x == max.x + max.w * 1/2 then
+	new_x = max.w * 1/3
+	new_width = max.w * 2/3
+      elseif f.x == max.w * 1/3 then
+	new_x = max.w * 2/3
+	new_width = max.w * 1/3
+      elseif f.x == max.w * 2/3 then
+	new_x = max.x + max.w * 1/2
+      end
+    end
+
+    return { xx = new_x, ww = new_width }
+end
+
 local function move_win(xx, yy, ww, hh)
   return function()
     local win = hs.window.focusedWindow()
@@ -11,12 +47,20 @@ local function move_win(xx, yy, ww, hh)
 
     local f = win:frame()
     local max = win:screen():frame()
-    
-    win:setFrame({ x = max.x + max.w * xx,
-                   y = max.y + max.h * yy,
-                   w = max.w * ww,
-                   h = max.h * hh}, 0)
-  end
+
+    if hh == 1 then
+      local result = calc_size(xx)
+      win:setFrame({ x = result["xx"],
+                     y = max.y + max.h * yy,
+                     w = result["ww"],
+                     h = max.h * hh}, 0)
+    else
+      win:setFrame({ x = max.x + max.w * xx,
+                     y = max.y + max.h * yy,
+                     w = max.w * ww,
+                     h = max.h * hh}, 0)
+	     end
+     end
 end
 
 local function maximize_win()
@@ -45,10 +89,14 @@ local function center_win()
 end
 
 return {
-  ['top']	= move_win(0, 0, 1, 1/2),
-  ['bottom']	= move_win(0, 1/2, 1, 1/2),
-  ['right']	= move_win(1/2, 0, 1/2, 1),
-  ['left']	= move_win(0, 0, 1/2, 1),
-  ['center']	= center_win(),
-  ['maximize']	= maximize_win()
+  ['top']		= move_win(0, 0, 1, 1/2),
+  ['bottom']		= move_win(0, 1/2, 1, 1/2),
+  ['right']		= move_win(1/2, 0, 1/2, 1),
+  ['left']		= move_win(0, 0, 1/2, 1),
+  ['top_right']		= move_win(1/2, 0, 1/2, 1/2),
+  ['top_left']		= move_win(0, 0, 1/2, 1/2),
+  ['bottom_right']	= move_win(1/2, 1/2, 1/2, 1/2),
+  ['bottom_left']	= move_win(0, 1/2, 1/2, 1/2),
+  ['center']		= center_win(),
+  ['maximize']		= maximize_win()
 }
