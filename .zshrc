@@ -1,7 +1,8 @@
-alias vi="nvim"
-alias gst="git status"
-alias python="python3"
-
+alias vi='nvim'
+alias gst='git status'
+alias python='python3'
+alias sudo='sudo '
+alias mv='mv -i'
 # Paths
 
 export "PATH=/usr/local/bin/:$PATH"
