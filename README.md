@@ -61,8 +61,9 @@ Display
 - (todo): move desktop
 
 ## Alfred
-wz: Open Wezterm
-ss: Search Swift doc
-sc: Search CPP doc
-nm: Search naver map
-gm: Search google map
+- wz: Open Wezterm
+- ss: Search Swift doc
+- sc: Search CPP doc
+- nm: Search naver map
+- gm: Search google map
+
