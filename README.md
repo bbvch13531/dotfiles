@@ -46,7 +46,12 @@ Display
 	Reduce motion [Yes]
 
 ## Packages to install
+### Prerequisite
+- brew
+- node
+- Xcode command line tool
 
+### Packages
 1. install homebrew with following command(from official docs)
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
