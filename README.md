@@ -1,6 +1,39 @@
 # dotfiles
 dotfiles
 
+## Mac system preferences
+### Keyboard
+
+Switch Control to Caps lock
+Keyboard - Modifier Keys - Select keyboard: Internal keyboard / trackpad
+한/A key: ^ Control
+^ Control: 한/A key
+FC660C와 HHKB는 딥스위치로 설정한다.
+
+Press global to Do Nothing
+Use F1, F2, etc as standard function keys [Yes]
+
+### Shortcuts
+Input Sources
+	Select the previous input source: cmd + space
+Mission Control
+	Move left a space: ctrl + shift + Q
+	Move right a space: ctrl + shift + E
+	Switch to Desktop 1: ctrl + shift + 1
+	Switch to Desktop 2: ctrl + shift + 2
+	Switch to Desktop 3: ctrl + shift + 3
+Keyboard
+	Move focus to next window: cmd + ` (back quote)
+Spotlight
+	Show Spotlight search: ctrl + opt + cmd + space
+
+### Input Sources
+Use 한/A Key to switch to and from ABC [No]
+
+### Accessibility
+Display
+	Reduce motion
+
 ## Todo
 
 1. install homebrew with following command(from official docs)
