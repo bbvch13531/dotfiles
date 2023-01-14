@@ -15,17 +15,18 @@ Use F1, F2, etc as standard function keys [Yes]
 
 ### Shortcuts
 Input Sources
-	Select the previous input source: cmd + space
+- Select the previous input source: cmd + space
 Mission Control
-	Move left a space: ctrl + shift + Q
-	Move right a space: ctrl + shift + E
-	Switch to Desktop 1: ctrl + shift + 1
-	Switch to Desktop 2: ctrl + shift + 2
-	Switch to Desktop 3: ctrl + shift + 3
+- Move left a space: ctrl + shift + Q
+-	Move right a space: ctrl + shift + E
+-	Switch to Desktop 1: ctrl + shift + 1
+-	Switch to Desktop 2: ctrl + shift + 2
+-	Switch to Desktop 3: ctrl + shift + 3
+
 Keyboard
-	Move focus to next window: cmd + ` (back quote)
+- Move focus to next window: cmd + ` (back quote)
 Spotlight
-	Show Spotlight search: ctrl + opt + cmd + space
+- Show Spotlight search: ctrl + opt + cmd + space
 
 ### Input Sources
 Use 한/A Key to switch to and from ABC [No]
