@@ -3,14 +3,13 @@ dotfiles
 
 ## Mac system preferences
 ### Keyboard
-
-Switch Control to Caps lock
-Keyboard - Modifier Keys - Select keyboard: Internal keyboard / trackpad
-한/A key: ^ Control
-^ Control: 한/A key
+Switch Control to Caps lock  
+Keyboard - Modifier Keys - Select keyboard: Internal keyboard / trackpad  
+한/A key: ^ Control  
+^ Control: 한/A key  
 FC660C와 HHKB는 딥스위치로 설정한다.
 
-Press global to Do Nothing
+Press global to Do Nothing  
 Use F1, F2, etc as standard function keys [Yes]
 
 ### Shortcuts
@@ -33,9 +32,9 @@ Use 한/A Key to switch to and from ABC [No]
 
 ### Accessibility
 Display
-	Reduce motion
+	Reduce motion [Yes]
 
-## Todo
+## Packages to install
 
 1. install homebrew with following command(from official docs)
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
@@ -51,9 +50,12 @@ Display
 6. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 `brew install zsh-autosuggestions`
 
-hammerspoon
-- change window to one third size
-- move to a left/right space 
-- Switch to Desktop1, 2, 3 ...
-
-raycast
+Hammerspoon
+- Change window size: ctrl + opt + arrow 
+- Change window quarter size: ctrl + opt + U I J K
+- Change window to full size: ctrl + opt + return
+- Brightness control: ctrl + f1(decrease) / f2(increase)
+- Media control: ctrl + f8(prev) / f9(play_pause) / f10(next)
+- Volumn control: ctrl + f11(decrease) / f12(increase)
+- Reload hammerspoon: opt + shift + r
+- (todo): move desktop
