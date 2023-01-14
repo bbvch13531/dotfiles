@@ -1,6 +1,17 @@
 # dotfiles
 dotfiles
 
+## Applications
+- Wezterm
+- Alfred
+- HammerSpoon
+
+
+## Browser Extensions
+- Adblock
+- Vimium or Vimari
+- 
+
 ## Mac system preferences
 ### Keyboard
 Switch Control to Caps lock  
@@ -59,6 +70,7 @@ Display
 - Volumn control: ctrl + f11(decrease) / f12(increase)
 - Reload hammerspoon: opt + shift + r
 - (todo): move desktop
+- (todo): back / forward in logitech mouse for Safari
 
 ## Alfred
 - wz: Open Wezterm
