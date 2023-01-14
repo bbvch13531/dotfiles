@@ -50,7 +50,7 @@ Display
 6. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 `brew install zsh-autosuggestions`
 
-Hammerspoon
+## Hammerspoon
 - Change window size: ctrl + opt + arrow 
 - Change window quarter size: ctrl + opt + U I J K
 - Change window to full size: ctrl + opt + return
@@ -59,3 +59,10 @@ Hammerspoon
 - Volumn control: ctrl + f11(decrease) / f12(increase)
 - Reload hammerspoon: opt + shift + r
 - (todo): move desktop
+
+## Alfred
+wz: Open Wezterm
+ss: Search Swift doc
+sc: Search CPP doc
+nm: Search naver map
+gm: Search google map
