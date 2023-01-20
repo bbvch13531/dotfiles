@@ -1,17 +1,6 @@
 # dotfiles
 dotfiles
 
-## Applications
-- Wezterm
-- Alfred
-- HammerSpoon
-
-
-## Browser Extensions
-- Adblock
-- Vimium or Vimari
-- 
-
 ## Mac system preferences
 ### Keyboard
 Switch Control to Caps lock  
@@ -83,4 +72,16 @@ Display
 - sc: Search CPP doc
 - nm: Search naver map
 - gm: Search google map
+
+## Applications
+- Wezterm
+- Alfred
+- HammerSpoon
+- Workflowy
+
+## Browser Extensions
+- Adblock
+- Vimium or Vimari
+-  
+
 

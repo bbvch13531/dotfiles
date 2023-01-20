@@ -13,24 +13,27 @@ local function calc_size(direction)
     local new_width = max.w * 1/2
     local new_x = max.x
 
+		local half = math.floor(max.w * 1/2)
+		local one_third = math.floor(max.w * 1/3)
+		local two_third = math.floor(max.w * 2/3)
     if direction == 0 then
-	if f.w == max.w * 1/2 then
-	  new_width = max.w * 2/3
-	elseif f.w == max.w * 2/3 then
-          new_width = max.w * 1/3
-	elseif f.w == max.w * 1/3 then
-	  new_width = max.w * 1/2
-	end
+			if f.w == half then
+				new_width = two_third
+			elseif f.w == two_third then
+				new_width = one_third
+			elseif f.w == one_third then
+				new_width = half
+			end
     else
-      new_x = max.x + max.w * 1/2
-      if f.x == max.x + max.w * 1/2 then
-	new_x = max.w * 1/3
-	new_width = max.w * 2/3
-      elseif f.x == max.w * 1/3 then
-	new_x = max.w * 2/3
-	new_width = max.w * 1/3
-      elseif f.x == max.w * 2/3 then
-	new_x = max.x + max.w * 1/2
+      new_x = max.x + half
+      if f.x == max.x + half then
+	new_x = two_third
+	new_width = two_third
+      elseif f.x == two_third then
+	new_x = two_third
+	new_width = two_third
+      elseif f.x == two_third then
+	new_x = max.x + half
       end
     end
 
