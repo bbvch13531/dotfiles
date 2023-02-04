@@ -27,13 +27,14 @@ local function calc_size(direction)
     else
       new_x = max.x + half
       if f.x == max.x + half then
-	new_x = two_third
-	new_width = two_third
-      elseif f.x == two_third then
-	new_x = two_third
-	new_width = two_third
-      elseif f.x == two_third then
-	new_x = max.x + half
+				new_x = one_third
+				new_width = two_third
+      elseif f.w == two_third then
+				new_x = two_third
+				new_width = one_third
+      elseif f.w == one_third then
+				new_x = max.x + half
+				new_width = half
       end
     end
 
