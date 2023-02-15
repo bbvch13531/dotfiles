@@ -3,8 +3,10 @@ alias gst='git status'
 alias python='python3'
 alias sudo='sudo '
 alias mv='mv -i'
-# Paths
+alias cp='cp -i'
+alias rm='rm -i'
 
+# Paths
 export "PATH=/usr/local/bin/:$PATH"
 function git_branch_name()
 {
@@ -41,4 +43,7 @@ if [ -f "$LFCD" ]; then
 fi
 bindkey -s '^o' 'lfcd\n'
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Loading zsh autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
