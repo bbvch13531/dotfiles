@@ -55,6 +55,7 @@ Display
 6. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 `brew install zsh-autosuggestions`
 7. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+8. [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
 
 ## Hammerspoon
 - Change window size: ctrl + opt + arrow 
