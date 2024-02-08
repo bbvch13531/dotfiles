@@ -80,10 +80,15 @@ Display
 - Alfred
 - HammerSpoon
 - Workflowy
+- Fork
+- nPlayer
+- Forklift3
 
 ## Browser Extensions
 - Adblock
-- Vimium or Vimari
--  
+- Vimium
+- Session Buddy
+- Deepl
+- PIP
 
 
