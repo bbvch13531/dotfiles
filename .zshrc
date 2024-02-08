@@ -6,6 +6,11 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
 
+# History command
+export HISTSIZE=5000
+export HISTFILESIZE=2000000
+alias history="history 1"
+
 # Paths
 export "PATH=/usr/local/bin/:$PATH"
 function git_branch_name()
