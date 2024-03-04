@@ -2,7 +2,11 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 
 return {
-	font_size = 16,
+  	font = wezterm.font {
+  		family = 'JetBrains Mono',
+		harfbuzz_feature = {'calt=0', 'clig=0', 'liga=0'},
+	},
+  font_size = 16,
   color_scheme = "Dracula+",
   hyperlink_rules = {
     {
