@@ -56,6 +56,14 @@ Display
 `brew install zsh-autosuggestions`
 7. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 8. [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+9. htop
+
+## Configs
+- zsh: `~/.zshrc`
+- wezterm: `~/.wezterm.lua`
+- hammerspoon: `~/.hammerspoon/`
+- neovim: `~/nvim/init.vim` or `~/.config/nvim/init.vim`
+- Alfred: 
 
 ## Hammerspoon
 - Change window size: ctrl + opt + arrow 
@@ -76,7 +84,7 @@ Display
 - gm: Search google map
 
 ## Applications
-- Wezterm
+- Wezterm 
 - Alfred
 - HammerSpoon
 - Workflowy
