@@ -52,11 +52,14 @@ Display
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 4. [lf(list files)](https://github.com/gokcehan/lf)
 5. [fzf](https://github.com/junegunn/fzf)
-6. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
-`brew install zsh-autosuggestions`
-7. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-8. [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
-9. htop
+6. [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+7. htop
+    
+Install using oh-my-zsh package(zsh plugin)
+1. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+2. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+
 
 ## Configs
 - zsh: `~/.zshrc`
