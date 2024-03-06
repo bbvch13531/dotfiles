@@ -43,7 +43,10 @@ zstyle ':completion:*:default' matcher-list 'm:{a-z}={A-Za-z}' list-colors ${(s.
 
 
 # lfcd
-LFCD="/Users/ky/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+# pre-built binary, make sure to use absolute path
+# Copy file from https://github.com/gokcehan/lf/blob/master/etc/lfcd.sh to path
+LFCD="/Users/ky/.config/lf/lfcd.sh"                                
+
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
