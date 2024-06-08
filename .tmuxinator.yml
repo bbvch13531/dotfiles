@@ -1,0 +1,31 @@
+# ./.tmuxinator.yml
+
+name: default
+root: ~/
+
+windows:
+  - main:
+      pre: conda activate
+      root: ~/Projects/research/DataAnalysis
+      layout: main-vertical
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - main:
+          - pwd
+        - sidebar:
+          - pwd
+  - runner:
+      pre: conda activate
+      root: ~/Projects/research/DataAnalysis
+      layout: 5fcf,254x59,0,0{147x59,0,0,1,106x59,148,0[106x29,148,0,6,106x29,148,30,7]}
+      panes:
+        - pane1:
+        - pane2:
+        - htop:
+          - htop
+  - devlog: 
+      root: ~/Projects/clonegit/devlog/MyDataDidit
+      panes:
+        - vi +$ s4bDevlog.md
