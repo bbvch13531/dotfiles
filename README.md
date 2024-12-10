@@ -54,7 +54,9 @@ Display
 5. [fzf](https://github.com/junegunn/fzf)
 6. [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
 7. htop
-    
+8. tmux
+9. tmuxinator
+
 Install using oh-my-zsh package(zsh plugin)
 1. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 2. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
