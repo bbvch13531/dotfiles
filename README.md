@@ -63,7 +63,7 @@ Install using oh-my-zsh package(zsh plugin)
 
 - jq
 - bat
-- 
+- ripgrep
 
 ## Configs
 - zsh: `~/.zshrc`
