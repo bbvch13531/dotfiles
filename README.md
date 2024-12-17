@@ -61,7 +61,9 @@ Install using oh-my-zsh package(zsh plugin)
 1. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 2. [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-
+- jq
+- bat
+- 
 
 ## Configs
 - zsh: `~/.zshrc`
