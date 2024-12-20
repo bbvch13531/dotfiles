@@ -64,6 +64,8 @@ Install using oh-my-zsh package(zsh plugin)
 - jq
 - bat
 - ripgrep
+- fd
+
 
 ## Configs
 - zsh: `~/.zshrc`
