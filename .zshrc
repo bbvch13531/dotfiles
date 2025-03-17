@@ -5,7 +5,6 @@ ZSH_THEME="color-input"
 HIST_STAMPS="mm/dd/yyyy"
 
 alias vi='nvim'
-alias python='python3'
 alias sudo='sudo '
 alias mv='mv -i'
 alias cp='cp -i'
@@ -14,12 +13,10 @@ alias rm='rm -i'
 # History command
 HISTSIZE=10000000
 HISTFILESIZE=20000000
-alias history="history 1"
 
 plugins=(
 	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
+	wd
 )
 
 
@@ -41,7 +38,6 @@ autoload -Uz compinit && compinit
 export LS_COLORS="di=34;40:ln=36;40:so=35;40:pi=33;40:ex=32;40:bd=1;33;40:cd=1;33;40:su=0;41:sg=0;43:tw=0;42:ow=34;40:"
 zstyle ':completion:*:default' matcher-list 'm:{a-z}={A-Za-z}' list-colors ${(s.:.)LS_COLORS}
 
-
 # lfcd
 # pre-built binary, make sure to use absolute path
 # Copy file from https://github.com/gokcehan/lf/blob/master/etc/lfcd.sh to path
@@ -54,7 +50,11 @@ bindkey -s '^o' 'lfcd\n'
 
 # Loading zsh autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Loading zsh syntax highlighting
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $ZSH/oh-my-zsh.sh
+
