@@ -5,6 +5,14 @@ root: ~/
 
 windows:
   - main:
+      root: ~/Projects/clonegit/Devlog/DidIt/PeriodDidIt
+      layout: main-vertical
+      panes:
+        - main:
+          - vi +$ hmdDevlog.md
+        - sidebar:
+          - pwd
+  - da:
       pre: conda activate
       root: ~/Projects/research/DataAnalysis
       layout: main-vertical
