@@ -73,6 +73,8 @@ Brew package
 - hammerspoon: `~/.hammerspoon/`
 - neovim: `~/nvim/init.vim` or `~/.config/nvim/init.vim`
 - Alfred: 
+- tmux: `~/.tmux.conf`
+- tmuxinator: `.config/tmuxinator/default.yml`
 
 ## Hammerspoon
 - Change window size: ctrl + opt + arrow 
@@ -94,7 +96,7 @@ Brew package
 
 ## Applications
 - Wezterm 
-- Alfred
+- Raycast
 - HammerSpoon
 - Workflowy
 - Fork
