@@ -58,8 +58,7 @@ end
 local off_input_source_mode = function()
 	input_source_mode:exit()
 	local win = hs.window.focusedWindow()
-	local app = win:application()
-	if app:title() == "WezTerm" then
+	if win and win:application():title() == "WezTerm" then
 		local input_source = hs.keycodes.currentSourceID()
 		if input_source == "com.apple.inputmethod.Korean.2SetKorean" then
 			hs.keycodes.currentSourceID("com.apple.keylayout.ABC")
